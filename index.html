@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canthere Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginScreen" class="overlay">
+        <h2>Pleas enter license code:</h2>
+        <input type="text" id="codeInput" placeholder="Kodunuzu yazın" />
+        <button id="submitButton">Enter</button>
+    </div>
+    <div id="warningScreen" class="overlay hidden">
+        <h2>Video Starting, please get ready!</h2>
+        <button id="startButton">OK</button>
+    </div>
+    <div id="countdownScreen" class="overlay hidden">
+        <h2 id="countdown">5</h2>
+    </div>
+    <video id="videoPlayer" class="hidden" autoplay>
+        
+        <source src="video.mp4" type="video/mp4">
+        Your browser doesn't support video playback.
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
